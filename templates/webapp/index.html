@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Vice Versa</h1>
+    <form action = "{% url 'reverse' %}" method="get">
+        <textarea rows="12" cols="40" name="usertext"> </textarea>
+        <br><br>
+        <input type="submit" value="Reverse!">
+    </form>
+</body>
+</html>

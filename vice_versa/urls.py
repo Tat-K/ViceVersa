@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from webapp.views import home, reverse
+
 urlpatterns = [
+    path('', home),
+    path('reverse/', reverse, name='reverse'),
     path('admin/', admin.site.urls),
 ]
